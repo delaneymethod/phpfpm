@@ -1,3 +1,3 @@
-# PHP
+# PHP-FPM
 
-A light-weight PHP container for Docker.
+A light-weight PHP-FPM container for Docker.
