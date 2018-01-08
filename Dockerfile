@@ -14,6 +14,8 @@ COPY php-fpm.conf /etc/php/7.1/fpm/php-fpm.conf
 
 COPY www.conf /etc/php/7.1/fpm/pool.d/www.conf
 
+COPY php.ini /etc/php/7.1/fpm/php.ini
+
 EXPOSE 9000
 
 CMD ["php-fpm7.1"]
