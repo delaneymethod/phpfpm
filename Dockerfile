@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 MAINTAINER Sean Delaney <hello@delaneymethod.com>
 
-RUN apt-get update && apt-get install -y locales && locale-gen en_GB.UTF-8
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y locales && locale-gen en_GB.UTF-8
 
 ENV LANG en_GB.UTF-8
 ENV LANGUAGE en_GB:en
